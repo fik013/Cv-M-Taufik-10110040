@@ -1,72 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #292929; 
+    color: #e0e0e0; 
 }
+
 
 .cv-container {
     max-width: 900px;
     margin: 20px auto;
-    background: #fff;
+    background: #58585800;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(29, 29, 29, 0.3); 
     border-radius: 8px;
 }
 
+
 .cv-header {
     text-align: center;
-    border-bottom: 2px solid #0078d7;
+    border-bottom: 2px solid #fa7900;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 .cv-header h1 {
     font-size: 2em;
-    color: #0078d7;
+    color: #2576b8;
     margin: 0;
+}
+
+
+
+img{
+    width: 100px;
+    border-radius: 50%;
+    max-height: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    object-fit: cover;
 }
 
 .cv-header p {
     margin: 5px 0;
     font-size: 1.2em;
+    color: #b0b0b0; 
 }
 
-.contact-info p {
-    font-size: 0.9em;
-    color: #555;
+
+.cv-main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.contact-button {
-    text-align: center;
-    margin-top: 10px;
+
+.left-column {
+    flex: 1 1 48%; 
 }
 
-.contact-button a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #0078d7;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
-    font-weight: bold;
-}
-
-.contact-button a:hover {
-    background-color: #005bb5;
-}
-
-.cv-section {
+.left-column .cv-section {
     margin-bottom: 20px;
 }
 
+
+.right-column {
+    flex: 1 1 48%; 
+}
+
+.right-column .cv-section {
+    margin-bottom: 20px;
+}
+
+
 .cv-section h2 {
     font-size: 1.5em;
-    border-bottom: 2px solid #0078d7;
+    border-bottom: 2px solid #4a90e2; 
     padding-bottom: 5px;
     margin-bottom: 10px;
+    color: #4a90e2; 
 }
 
 .cv-section ul {
@@ -77,8 +100,31 @@ body {
 .cv-section ul li {
     margin-bottom: 10px;
     line-height: 1.5;
+    color: #e0e0e0; 
 }
 
 .cv-section ul li strong {
-    color: #0078d7;
+    color: #51beda; 
+}
+
+
+.contact-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact-button a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #eb6e07; 
+    color: #4b4b4b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s; 
+}
+
+.contact-button a:hover {
+    background-color: #357ab8; 
 }
