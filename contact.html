@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubungi Saya - Muhammad Taufik Hidayat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cv-container">
+        <header class="cv-header">
+            <h1>Hubungi Saya</h1>
+        </header>
+
+        <section class="cv-section">
+            <h2>Informasi Kontak</h2>
+            <p>Untuk informasi lebih lanjut atau pertanyaan, Anda dapat menghubungi saya melalui:</p>
+            <ul>
+                <li>📞 +62 896 9264 1965</li>
+                <li>✉️ muhammadtaufikhidayat013@gmail.com</li>
+                <li>🏠 Jl Baru Kalijati, Kecamatan Kalijati, Kabupaten Subang, Jawa Barat 41271</li>
+            </ul>
+        </section>
+
+        <section class="cv-section">
+            <h2>Atau, Kirim Pesan Langsung</h2>
+            <form action="send-message.php" method="POST">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
